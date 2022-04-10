@@ -6,7 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
-public interface HighlightRepository extends CrudRepository<Highlight, String> {
+public interface HighlightRepository extends CrudRepository<Highlight, Long> {
     @Query("select p.id from #{#entityName} p")
-    List<String> getAllIds();
+    List<Long> getAllIds();
 }
