@@ -22,7 +22,7 @@ public class Highlight {
     @Column
     private String title;
 
-    @Column
+    @Column(columnDefinition = "TEXT")
     private String description;
 
     @Column
