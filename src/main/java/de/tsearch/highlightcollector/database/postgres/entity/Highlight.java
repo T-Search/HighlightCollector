@@ -25,10 +25,10 @@ public class Highlight {
     @Column(columnDefinition = "TEXT")
     private String description;
 
-    @Column
+    @Column(columnDefinition = "TIMESTAMP WITH TIME ZONE")
     private Date createdAt;
 
-    @Column
+    @Column(columnDefinition = "TIMESTAMP WITH TIME ZONE")
     private Date publishedAt;
 
     @Column
